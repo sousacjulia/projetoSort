@@ -1,0 +1,63 @@
+-------------BUBBLE SORT-------------------------
+É o algoritmo mais simples, baseado em comparação;
+Bubble é um algoritmo estável pois preserva a ordem dos elementos duplicados;
+Complexidade de tempo: O(n²); n = número de elementos;
+Para n elementos temos n-1 iterações;
+
+Etapas do bubble:
+1. Começa comparando cada elemento com seu elemento adjacente a partir do índice inicial
+2. Se o elemento atual e o proximo estiverem fora de ordem, há a troca;
+3. Repita o passo 2 para todos os elementos do array.
+4. Repetir todos os passos 1, 2 e 3 até chegarmos ao resultado ordenado do array.
+
+
+1.	Na melhor das hipóteses, a matriz já está classificada. Assim, haverá zero trocas.
+2.	No caso médio, a matriz é confusa. O número de trocas será de O (n²).
+3.	Na pior das hipóteses, o número de trocas será igual ao número de comparações, ou seja, O (n²).
+
+
+-------------INSERTION SORT-------------------------
+•	Algoritmo de classificação;
+•	O isertion sort é usado quando o número de elementos é pequeno. Também pode ser útil quando a array, está quase classificada, 
+apenas alguns elementos estão mal colocados na matriz grande completa.
+
+
+Etapas do Insertion:
+Com o segundo elemento do array* ele compara se o primeiro elemento é maior, se for verdadeiro ele é colocado na frente do primeiro elemento; 
+Com os dois primeiros classificados ele parte para o terceiro, comparando-os sempre a esquerda do elemento classificado e assim por diante com o quarto, 
+quinto, sexto etc. até cada elemento não classificado esteja em sua posição;
+
+O insertion leva o máximo de tempo para ordenar se os elementos forem ordenados na ordem inversa. E leva um tempo mínimo (Ordem de n) quando os elementos já estão ordenados.
+
+-------------SELECTION SORT-------------------------
+•	Faz um número linear de trocas, independente do vetor de entrada;
+•	Procurar o menor/maior elemento do vetor e fazer a troca para a primeira/última posição;
+•	Repetindo para os n elementos do vetor;
+•    O algoritmo mantém dois subarrays em um determinado array.
+•	Faz menores quantidade de movimento entre os elementos (pode haver algum ganho em situações complexas)
+
+Etapas do selection:
+1. O subarray que já está ordenado. 
+2. Subarray restante que não está classificado.
+Em cada iteração so selection, o elemento mínimo (considerando ordem crescente) do subarray não ordenado é selecionado e movido para o subarray ordenado. 
+
+-------------MERGE SORT-------------------------
+•	Dividir e conquistar;
+•	É estável, não altera a ordem dos dados iguais;
+•	Independente da disposição dos dados no array, a ordenação será eficiente;
+•	Funciona bem com grandes e pequenos dados
+•	Melhor para listas vinculadas;
+•	Divididos em submatrizes (n/2) repetidamente até que reste apenas um elemento; 
+
+Etapas do merge:
+1. Dividir em ao meio o vetor até que o subconjunto tenha apenas um elemento;
+2 Combine dois subconjuntos de formar ordenada, até obter um conjunto maior e ordenado; esse processo se repete até que só reste um conjunto;
+
+-------------QUICK SORT-------------------------
+•	Algoritmo recursivo (divisão e conquista);
+•	Não há necessidade de alocar memoria auxiliar para realizar a ordenação, pois é realizada no próprio vetor;
+•	Não há uma regra para a escolha do pivô;
+•	A implementação padrão não é estável. No entanto, qualquer algoritmo de ordenação pode se tornar estável considerando índices como parâmetro de comparação.
+
+
+
